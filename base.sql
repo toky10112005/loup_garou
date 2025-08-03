@@ -1,0 +1,13 @@
+CREATE DATABASE Loup_Garou;
+USE Loup_Garou;
+
+CREATE TABLE joueur(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(55) UNIQUE
+);
+
+CREATE TABLE role(
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nom VARCHAR(100) UNIQUE,
+    description TEXT
+)
